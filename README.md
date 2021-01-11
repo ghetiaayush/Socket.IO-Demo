@@ -4,10 +4,27 @@
 - It has two parts:- 
 1) a client-side library that runs in the browser 
 2) a server-side library for node.js. Both components have an identical API.
-# Real-time applications
-- A real-time application (RTA) is an application that functions within a period that the user senses as immediate or current.
-- Some examples of real-time applications are :-
-1) Instant messengers − Chat apps like Whatsapp, Facebook Messenger, etc. You need not refresh your app/website to receive new messages.
-2) Push Notifications − When someone tags you in a picture on Facebook, you receive a notification instantly.
-3) Collaboration Applications − Apps like google docs, which allow multiple people to update same documents simultaneously and apply changes to all people's instances.
-4) Online Gaming − Games like Counter Strike, Call of Duty, etc., are also some examples of real-time applications.
+
+# Socket.IO - Environment Setup
+- To get started with developing using the Socket.IO, you need to have Node and npm (node package manager) installed. 
+- If you do not have these, head over to Node setup to install node on your local system. 
+- Confirm that node and npm are installed by running the following commands in your terminal.
+1. node --version
+2. npm --version
+- Open your terminal and enter the following in your terminal to create a new folder and enter the following commands.
+1. $ mkdir test-project
+2. $ cd test-proect
+3. $ npm init
+- It will ask you some questions; answer them in the following way 
+
+![alt text](https://www.tutorialspoint.com/socket.io/images/environment_setup.jpg)
+
+- This will create a ‘package.json node.js’ configuration file.Now we need to install Express and Socket.IO. To install these and save them to package.json file, enter the following command in your terminal, into the project directory.
+
+1. npm install --save express socket.io
+
+- One final thing is that we should keep restarting the server. When we make changes, we will need a tool called nodemon. To install nodemon, open your terminal and enter the following command 
+
+1. npm install -g nodemon
+
+- Whenever you need to start the server, instead of using the node app.js use, nodemon app.js. This will ensure that you do not need to restart the server whenever you change a file. It speeds up the development process.

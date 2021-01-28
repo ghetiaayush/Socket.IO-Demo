@@ -7,7 +7,7 @@
 
 # Socket.IO - Environment Setup
 - To get started with developing using the Socket.IO, you need to have Node and npm (node package manager) installed. 
-- If you do not have these, head over to Node setup to install node on your local system. 
+- If you do not have these, then first install node on your local system.   
 - Confirm that node and npm are installed by running the following commands in your terminal.
 1. node --version
 2. npm --version
